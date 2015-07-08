@@ -440,6 +440,11 @@
     if (options.linkTextBlock) {
       text = options.linkTextBlock(entity, text);
     }
+
+    if (options.onClick) {
+      attrs.onClick = options.onClick;
+    }
+
     var d = {
       text: text,
       attr: twttr.txt.tagAttrs(attributes)
@@ -473,10 +478,6 @@
       attrs.target = '_blank';
     }
 
-    if (options.onClick) {
-      attrs.onClick = options.onClick;
-    }
-
     return twttr.txt.linkToTextWithSymbol(entity, hash, hashtag, attrs, options);
   };
 
@@ -488,10 +489,6 @@
     attrs["class"] =  options.cashtagClass;
     if (options.targetBlank) {
       attrs.target = '_blank';
-    }
-
-    if (options.onClick) {
-      attrs.onClick = options.onClick;
     }
 
     return twttr.txt.linkToTextWithSymbol(entity, "$", cashtag, attrs, options);
@@ -510,10 +507,6 @@
     }
     if (options.targetBlank) {
       attrs.target = '_blank';
-    }
-
-    if (options.onClick) {
-      attrs.onClick = options.onClick;
     }
 
     return twttr.txt.linkToTextWithSymbol(entity, at, isList ? user + slashListname : user, attrs, options);
@@ -555,10 +548,6 @@
 
     if (!options.title && urlEntity.display_url) {
       attrs.title = urlEntity.expanded_url;
-    }
-
-    if (options.onClick) {
-      attrs.onClick = options.onClick;
     }
 
     return twttr.txt.linkToText(entity, linkText, attrs, options);
