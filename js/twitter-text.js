@@ -442,7 +442,7 @@
     }
 
     if (options.onClick) {
-      attrs.onClick = options.onClick;
+      attributes.onClick = options.onClick;
     }
 
     var d = {
