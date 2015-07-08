@@ -1,11 +1,8 @@
 {
   "name": "twitter-text",
   "description": "official twitter text linkification",
-  "version": "1.13.2-idz",
-  "main": "./twitter-text.js",
-  "files": [
-    "twitter-text.js"
-  ],
+  "version": "1.13.0-idz",
+  "main": "./js/twitter-text.js",
   "homepage": "https://github.com/twitter/twitter-text-js",
   "author": "Twitter Inc.",
   "repository": {
