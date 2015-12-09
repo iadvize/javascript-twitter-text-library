@@ -1,5 +1,5 @@
 {
-  "name": "twitter-text",
+  "name": "@iadvize/javascript-twitter-text-library",
   "description": "official twitter text linkification",
   "version": "1.13.0-idz",
   "main": "./js/twitter-text.js",
